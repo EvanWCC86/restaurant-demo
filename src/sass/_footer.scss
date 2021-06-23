@@ -1,0 +1,54 @@
+.footer_section {
+    background-color: $navbar_color;
+    color:$gold_color;
+    width: 100%;
+    padding:20px;
+
+    .footer_container {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        place-items: center;
+
+        @media screen and (min-width: 800px) {
+            grid-template-columns: 1fr 1fr 1fr;
+           
+        }
+
+        .footer_left {
+            text-align: center;
+            h3 {
+                margin-bottom: 20px;
+                font-size: 1.5rem;
+                
+            }
+            .contact {
+                display: flex;
+                margin-bottom: 10px;
+            }
+        }
+
+        .footer_center {
+            text-align: center;
+            h3 {
+                margin-bottom: 20px;
+                font-size: 1.5rem;
+            }
+           .social_icons {
+               font-size: 1.2rem;
+           }
+        }
+
+        .footer_right {
+            text-align: center;
+            h3 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            p {
+                margin-bottom: 10px;;
+            }
+        }
+    }
+}

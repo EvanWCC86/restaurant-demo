@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro&display=swap');
+
+
+@import './variable';
+@import './hero';
+@import './about';
+@import './chefs';
+@import './foodCard';
+@import './footer';
+@import './hero';
+@import './menu';
+@import './navbar';
+@import './sidebar';
+@import './animation';
+@import './reservationForm';
+@import './contactForm';
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: $body_font;
+    background-color: $navbar_color;
+}
+
+
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin:auto;
+}
+
+// backdrop
+.backdrop {
+    width:100%;
+    height:100vh;
+    background-color: rgba(0,0,0,0.5);
+    z-index:100;
+    position:fixed;
+    top:0;
+    left:0;
+}
+
+// homepage
+.homePage .pageSection {
+    margin-bottom: 30px;
+}
+
+// Reservation Page
+.reservationPage {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+    .reservation_section {
+        height: 100%;
+    }
+}
+
+// Menu Page
+.menuPage {
+    margin: 40px auto;
+}
+
+// contact page
+.contactPage {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .contact_section {
+        height: 100%;
+    }
+}
+   
+    
